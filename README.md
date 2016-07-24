@@ -21,7 +21,7 @@ $ cd website
 ```
 2. Install dependencies:
 ```
-$ (sudo) npm install -g typescript gulp
+$ (sudo) npm install -g gulp
 $ npm install
 ```
 
