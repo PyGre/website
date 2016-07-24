@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.DS_Store": true,
+        ".idea/": true,
+        "node_modules/": false,
+        "typings/": true,
+        "app/**/*.js":      { "when": "$(basename).ts"},
+        "app/**/*.js.map":  true
+    }
+}
