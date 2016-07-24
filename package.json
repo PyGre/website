@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "PyGre.io website sources",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PyGre/website.git"
+  },
+  "author": {
+    "name": "Francois Best",
+    "email": "francois.best@pygre.io",
+    "url": "http://pygre.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PyGre/website/issues"
+  },
+  "homepage": "http://pygre.io"
+}
