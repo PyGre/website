@@ -21,7 +21,7 @@ $ cd website
 ```
 2. Install dependencies:
 ```
-$ (sudo) npm install -g gulp
+$ (sudo) npm install -g gulp node-sass
 $ npm install
 ```
 
@@ -38,5 +38,6 @@ mostly when building from CLI, as VSCode has TypeScript transpilation built-in.
 ### Production
 
 The generated HTML/CSS/JS code is hosted on GitHub pages. Not on the `gh-pages`
-branch of this repository, but to the `master` branch of [PyGre/pygre.github.io](https://github.com/PyGre/pygre.github.io),
+branch of this repository, but to the `master` branch of
+[PyGre/pygre.github.io](https://github.com/PyGre/pygre.github.io),
 and accessible at http://pygre.io
