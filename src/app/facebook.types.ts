@@ -28,9 +28,9 @@ export class Event
     {
         return this.start_time.format('DD');
     }
-    getMonth(): number // zero indexed: January = 0
+    getMonth(): string
     {
-        return this.start_time.month();
+        return this.start_time.format('MMM');
     }
     getStartTime(): string
     {
