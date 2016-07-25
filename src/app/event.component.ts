@@ -1,21 +1,22 @@
-import { Component } from '@angular/core';
-import { Event } from './facebook.types.ts';
+import { Component, Input } from '@angular/core';
+import { Event } from './facebook.types';
 
 @Component({
     selector: 'pygre-event',
     template: `
         <div class="event">
             <div class="event-header">
-                <span class="date">{{getCalendarDay()}}</span>
-                <span class="name">{{name}}</span>
+                <span class="date">{{event.getCalendarDay()}}</span>
+                <span class="name">{{event.name}}</span>
             </div>
             <div class="event-body">
-                <p class="description">{{description}}</p>
+                <p class="description">{{event.description}}</p>
             </div>
         </div>
     `
 })
-export class EventComponent extends Event
+export class EventComponent
 {
-    
+    @Input()
+    event: Event;
 }

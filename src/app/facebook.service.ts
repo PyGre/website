@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, Response, ResponseOptions } from '@angular/http';
-import { Event, EventJson } from './facebook.types.ts';
+import { Event, EventJson } from './facebook.types';
 import 'rxjs/add/operator/toPromise';
 import * as moment from 'moment';
 
@@ -10,7 +10,7 @@ export class FacebookService
     private url: string;
     constructor(private http: Http)
     {
-        this.url = 'http://pi3.fortyseveneffects.com:8000';
+        this.url = 'http://localhost:8000';
     }
 
     loadEvents(): Promise<Array<Event>>
@@ -23,7 +23,7 @@ export class FacebookService
     }
     private fetchData(): Promise<Response>
     {
-        const mock = true;
+        const mock = false;
         return mock ? this.mockFacebookApi() 
                     : this.http.get(this.url).toPromise();
     }
@@ -69,7 +69,7 @@ export class FacebookService
                 event.name                  = entry.name;
                 event.description           = entry.description;
                 event.start_time            = moment(entry.start_time);
-                Object.assign(event.location, entry.place.location, entry.place.name);
+                //Object.assign(event.location, entry.place.location, entry.place.name);
                 events.push(event);
             }
             resolve(events);
