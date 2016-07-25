@@ -26,7 +26,7 @@ export class Event
 {
     getCalendarDay(): string
     {
-        return this.start_time.format('MM');
+        return this.start_time.format('DD');
     }
     getMonth(): number // zero indexed: January = 0
     {
